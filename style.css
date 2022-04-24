@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: auto;
+    height: auto;
+    background-color: hsl(216, 12%, 8%);
+}
+
+#container, #thankYou {
+    background-color: hsl(213, 19%, 18%);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 375px;
+    height: auto;
+
+    color: hsl(0, 0%, 100%);
+
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+
+    padding: 1.5em;
+    border-radius: 8%;
+    z-index: 1;
+}
+
+#star {
+    background-color: hsla(216, 12%, 54%, 0.2);
+    padding: 1em;
+    height: auto;
+    width: 6%;
+    border-radius: 100%;
+}
+
+.title {
+    margin: 0.75em 0;
+}
+
+.content {
+    color: hsl(217, 12%, 63%);
+    font-weight: 400;
+    margin: 0.5em 0 2em;
+}
+
+
+.buttons, #submit {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ratingButton {
+    position: relative;
+    border: none;
+    font-size: 18px;
+    color: hsl(217, 12%, 63%);
+    background-color: hsla(216, 12%, 54%, 0.2);
+    padding: .75em;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.ratingButton:hover {
+    color: white;
+    background-color: hsl(217, 12%, 63%);
+}
+
+.ratingButton:focus {
+    color: white;
+    background-color: hsl(25, 97%, 53%)
+}
+
+#submit {
+    background-color: hsl(25, 97%, 53%);
+    color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    position: relative;
+    margin: 1.5em auto 0;
+    padding: 0.7em;
+
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+    border: none;
+    border-radius: 50vh;
+}
+
+#submit:active {
+    color: hsl(25, 97%, 53%);
+    background-color: rgb(255, 255, 255);   
+}
+
+
+/* ===============
+    Thank You 
+=================*/
+
+
+#thankYou {
+    background-color: hsl(213, 19%, 18%);
+    z-index: 0;
+    height: 350px;
+    
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    
+    font-family: 'Outfit', sans-serif;
+}
+
+.ty {
+    margin: 1em 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.rating {
+    color:hsl(25, 97%, 53%);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: hsla(216, 12%, 54%, 0.2);
+    width: fit-content;
+    padding: 0.5em 1em;
+    border-radius: 50vh;
+
+    
+}

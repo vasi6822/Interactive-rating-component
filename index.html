@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <div id="container">
+
+    <img src="icon-star.svg" alt="Star" id="star">
+    <h1 class="title">How did we do?</h1>
+    <p class="content">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+
+    <div class="buttons">
+      <button class="ratingButton" id="one" onclick="document.getElementById(`number`).innerHTML = `1`">1</button>
+      <button class="ratingButton" id="second" onclick="document.getElementById(`number`).innerHTML = `2`">2</button>
+      <button class="ratingButton" id="third" onclick="document.getElementById(`number`).innerHTML = `3`">3</button>
+      <button class="ratingButton" id="forth" onclick="document.getElementById(`number`).innerHTML = `4`">4</button>
+      <button class="ratingButton" id="fifth" onclick="document.getElementById(`number`).innerHTML = `5`">5</button>
+    </div>
+
+    <button id="submit" type="submit">SUBMIT</button>
+
+  </div>
+
+  <div id="thankYou">
+    <img src="illustration-thank-you.svg" alt="Thank You Image" class="ty">
+    <div class="rating">You selected <span id="number">&nbsp</span> out of 5</div>
+    <h1 class="title">Thank You!</h1>
+    <p class="content">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/vasi6822">Agache Vasile Andrei</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
